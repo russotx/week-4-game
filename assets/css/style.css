@@ -89,11 +89,19 @@ header {
   flex-direction: column;
 }
 
+.arena {
+  position: relative;
+}
+
 #battlefield {
-  height: 400px;
+  height: 100%;
+  position: absolute;
   border: solid 3px #00086C;
   border-radius: 10%;
   margin-top: 40px;
+  flex: 1;
+  right: 0;
+  bottom: 0;
 }
 
 #attack {
@@ -117,7 +125,7 @@ header {
   margin-right: 20px;
 }
 
-#enemyQ {
+#enemySection {
   display: flex;
   flex-direction:; row;
   width: 33.3333%;
@@ -173,13 +181,40 @@ header {
   display: flex;
   padding: 0;
   position: relative;
+  background-color: #89B577;
+}
+
+.charName {
+  color: white;
+  font-family: 'VT323', monospace;
+  font-weight: 400;
+  font-size: 2.5em;
+}
+
+.cntrPwr,
+.hitPts {
+  color: black;
 
 }
 
-.enemy {
+.enemyBtn {
   height: 120px;
   border: solid 3px #0000CB;
   border-radius: 10%;
+  display: flex;
+  padding: 0;
+  position: relative;
+  background-color: #B02312;
+
+}
+
+#enemyBase {
+  height: 200px;
+  display: block;
+}
+
+#heroBase {
+  height: 200px;
   display: block;
 }
 

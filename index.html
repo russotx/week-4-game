@@ -1,15 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>RPG Game</title>
   <!-- JavaScript file -->
 
   <!-- reset browser defaults -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css"/>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
   <!-- custom stylesheet -->
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 
 
@@ -29,12 +31,15 @@
         </div>
     </aside>
 
+    <!-- main row for all character and enemy buttons -->
     <div class="row split">
+      <!-- column containing all the starting character buttons -->
       <nav class="col-3" id="charQ">
+        <!-- row for individual character button -->
         <div class="row left-align">
-
+          <!-- each button in its own column -->
           <button class="col-2 charBtn" data-char="char0">
-            <div class="row row-vert split">
+            <section class="row row-vert split">
               <aside class="cntrPwr col-1">
                 6
               </aside>
@@ -44,13 +49,13 @@
               <aside class="hitPts col-1">
                 120
               </aside>
-            </div>
+            </section>
             <!-- hero box with img etc from JS object -->
           </button>
 
           <button class="col-2 charBtn" data-char="char1">
             <!-- hero box with img etc from JS object -->
-            <div class="row row-vert split">
+            <section class="row row-vert split">
               <aside class="cntrPwr col-1">
                 6
               </aside>
@@ -60,13 +65,12 @@
               <aside class="hitPts col-1">
                 120
               </aside>
-            </div>
+            </section>
           </button>
 
           <button class="col-2 charBtn" data-char="char2">
             <!-- hero box with img etc from JS object -->
-            <div class="row">
-             <div class="row row-vert split">
+            <section class="row row-vert split">
               <aside class="cntrPwr col-1">
                 6
               </aside>
@@ -76,12 +80,12 @@
               <aside class="hitPts col-1">
                 120
               </aside>
-            </div>
+            </section>
           </button>
 
           <button class="col-2 charBtn" data-char="char3">
             <!-- hero box with img etc from JS object -->
-            <div class="row row-vert split">
+            <section class="row row-vert split">
               <aside class="cntrPwr col-1">
                 6
               </aside>
@@ -91,56 +95,62 @@
               <aside class="hitPts col-1">
                 120
               </aside>
-            </div>
+            </section>
           </button>
-
         </div>
       </nav>
-
-      <aside class="col-3" id="enemyQ">
-        <div class="row right-align">
-          <div class="col-2 enemy" data-enemy="enemy0">
-          </div>
-          <div class="col-2 enemy" data-enemy="enemy1">
-          </div>
-          <div class="col-2 enemy" data-enemy="enemy2">
-          </div>
-        </div>
-      </aside>
-
     </div>
-    <section class="row">
+    <!-- end of row for character buttons -->
+
+    <!-- row of enemy buttons to choose from -->
+    <aside class="col-3" id="enemySection">
+      <div class="row right-align" id="enemyQ">
+
+      </div>
+    </aside>
+
+    <!-- the bottom section of the screen with attack button
+          active hero and enemy icons and battlefield -->
+    <section class="row arena">
+
       <aside class="col-2">
+
+        <!-- nested row for attack button -->
         <div class="row">
+
           <div class="col-6">
             <button id="attack">Attack!</button>
           </div>
+
         </div>
-        <div class="row">
-            <div class="col-2 enemy" data-enemy="enemy2">
-            </div>
+        <!-- nested row for heroBase -->
+        <div class="row left-align">
+
+          <div id="heroBase" class="col-6"></div>
+
         </div>
+        <!-- nested row for enemyBase -->
+        <div class="row left-align">
+
+          <div id="enemyBase" class="col-6"></div>
+
+        </div>
+
       </aside>
+      <!-- the battlefield for animation -->
       <article id="battlefield" class="col-4">
 
       </article>
     </section>
 
 
-
-
-
-
-
-
-
-
-  <!-- no more content past this piont -->
+<!-- no more content past this piont -->
 </main>
 <!-- footer  -->
+<!--
 <footer id="stickyFooter">
   <p>&copy;Copyright 2017 Daniel Russo</p>
-</footer>
+</footer> -->
 
 <script src="./assets/javascript/game.js"></script>
 
