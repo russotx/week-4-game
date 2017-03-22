@@ -1,0 +1,55 @@
+establish 4 character prototypes
+draw 4 character buttons associated with char prototypes
+prompt to choose character
+click on character
+
+build heroChar from prototype with object properties matching the button description
+associate herChar with div id in the html so you can access all html from one id.
+
+move heroChar to heroBase
+
+build 3 enemyChars from prototype with object properties matching the button description
+
+draw enemy characters in enemyQ
+prompt to choose enemy
+remove enemy
+draw enemy in enemy base
+
+
+//-------- bonus content
+draw player char animate
+draw enemy char animate
+animate player attack
+animate enemy hit
+animate enemy counterattack
+animate player hit
+animate winner celebrate
+animate loser death
+move dead enemies to body count section
+//----------------------
+
+prompt begin battle
+click attack
+deduct enemy health
+increase player attack power by base
+enemy attack
+deduct player health
+click attack
+repeat
+if player hp <=0 player dead
+  draw lose screen
+if enemy hp <=0 enemy dead
+  remove enemy/ based on obj name associated with an id
+prompt choose enemy
+click enemy
+remove enemy
+add enemy to enemy base
+click attack
+repeat...
+if all enemy dead
+  draw win screen
+
+
+
+
+

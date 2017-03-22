@@ -10,21 +10,133 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
   <!-- custom stylesheet -->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 
 
 </head>
 <body>
 
   <header>
-
+    <h1>Battle Time</h1>
   </header>
 
+
   <!-- the main body: begin content -->
-  <main class="entireContent">
+  <main class="gameBoard">
+    <aside class="row" id="gameFeed">
+        <div class="col-6">
+          <h2 id="feedText">Choose your hero.</h2>
+        </div>
+    </aside>
+
+    <div class="row split">
+      <nav class="col-3" id="charQ">
+        <div class="row left-align">
+
+          <button class="col-2 charBtn" data-char="char0">
+            <div class="row row-vert split">
+              <aside class="cntrPwr col-1">
+                6
+              </aside>
+              <header class="charName col-6">
+                Brutus
+              </header>
+              <aside class="hitPts col-1">
+                120
+              </aside>
+            </div>
+            <!-- hero box with img etc from JS object -->
+          </button>
+
+          <button class="col-2 charBtn" data-char="char1">
+            <!-- hero box with img etc from JS object -->
+            <div class="row row-vert split">
+              <aside class="cntrPwr col-1">
+                6
+              </aside>
+              <header class="charName col-6">
+                Brutus
+              </header>
+              <aside class="hitPts col-1">
+                120
+              </aside>
+            </div>
+          </button>
+
+          <button class="col-2 charBtn" data-char="char2">
+            <!-- hero box with img etc from JS object -->
+            <div class="row">
+             <div class="row row-vert split">
+              <aside class="cntrPwr col-1">
+                6
+              </aside>
+              <header class="charName col-6">
+                Brutus
+              </header>
+              <aside class="hitPts col-1">
+                120
+              </aside>
+            </div>
+          </button>
+
+          <button class="col-2 charBtn" data-char="char3">
+            <!-- hero box with img etc from JS object -->
+            <div class="row row-vert split">
+              <aside class="cntrPwr col-1">
+                6
+              </aside>
+              <header class="charName col-6">
+                Brutus
+              </header>
+              <aside class="hitPts col-1">
+                120
+              </aside>
+            </div>
+          </button>
+
+        </div>
+      </nav>
+
+      <aside class="col-3" id="enemyQ">
+        <div class="row right-align">
+          <div class="col-2 enemy" data-enemy="enemy0">
+          </div>
+          <div class="col-2 enemy" data-enemy="enemy1">
+          </div>
+          <div class="col-2 enemy" data-enemy="enemy2">
+          </div>
+        </div>
+      </aside>
+
+    </div>
+    <section class="row">
+      <aside class="col-2">
+        <div class="row">
+          <div class="col-6">
+            <button id="attack">Attack!</button>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-2 enemy" data-enemy="enemy2">
+            </div>
+        </div>
+      </aside>
+      <article id="battlefield" class="col-4">
+
+      </article>
+    </section>
+
+
+
+
+
+
+
+
 
 
   <!-- no more content past this piont -->
-  </main>
+</main>
 <!-- footer  -->
 <footer id="stickyFooter">
   <p>&copy;Copyright 2017 Daniel Russo</p>
